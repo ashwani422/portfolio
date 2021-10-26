@@ -27,18 +27,18 @@ export default function IntroSection() {
 
         <div className="intro-container">
           <Typography variant='h6'>Hello!&#128075;</Typography>
-          <Typography variant='h5'>My Name is <span className='name-span'>Ashwani Kumar.</span></Typography>
+          <Typography variant='h5'>I'm <span className='name-span'>Ashwani Kumar.</span></Typography>
           <Typography
             variant='h4'
             component='div'
-          >I am a <Typewriter
+          >I'm a <Typewriter
             options={{
-              strings: ['Web Developer.', 'Gamer.'],
+              strings: ['Web Developer.', 'React Developer.'],
               autoStart: true,
               loop: true,
               cursor: '_',
-              delay: 100,
-              pauseFor: 4000
+              delay: 50,
+              pauseFor: 3000
             }}       
           /></Typography>
           <Typography variant='body1'>Profiles:</Typography>
