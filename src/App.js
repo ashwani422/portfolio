@@ -1,27 +1,14 @@
-import CssBaseline from '@mui/material/CssBaseline'
-import createTheme from '@mui/material/styles/createTheme'
 import ThemeProvider from '@mui/material/styles/ThemeProvider'
+import CssBaseline from '@mui/material/CssBaseline'
+import theme from './AppStyles'
 
 import NavBar from './components/NabBar'
 import IntroSection from './components/IntroSection'
+import SkillsSection from './components/SkillsSection'
 
-// -------------------- START Custom theme --------------------
-const theme = createTheme({
-  palette: {
-    type: 'light',
-    primary: {
-      main: '#540D6E',
-    },
-    secondary: {
-      main: '#f50057',
-    },
-    background: {
-      default: '#eaeaea',
-    },
-  },
-})
-// -------------------- END Custom theme --------------------
-
+//----------------------------------------------------------------------------------------------------
+//-- Main Component Function
+//----------------------------------------------------------------------------------------------------
 export default function App() {
   return (
     <>
@@ -29,6 +16,7 @@ export default function App() {
         <CssBaseline />
         <NavBar />
         <IntroSection />
+        <SkillsSection />
       </ThemeProvider>
     </>
   )
